@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+:root {
+    /* ### Primary*/
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    /*### Neutral*/
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+    /*### Extension*/
+    --Desaturated-blue-opacity: hsl(224, 23%, 55%, 25%);
+}
+
+body {
+    background-color: var(--Pale-blue);
+    /*size*/
+    height: 100vh;
+    /*text*/
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    /*flexbox*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pattern-bg {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    /*image*/
+    background-image: url(/images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /*size*/
+    height: 194px;
+    width: 100%;
+}
+
+.main-container {
+    border-radius: 30px;
+    /*shadow*/
+    box-shadow: 0.5px 15px 15px var(--Desaturated-blue-opacity);
+    /*space*/
+    margin-right: 15px;
+    margin-left: 15px;
+    /*text*/
+    background-color: white;
+    text-align: center;
+}
+
+.img-hero {
+    border-radius: 30px 30px 0px 0px;
+    /*image*/
+    background-image: url(/images/illustration-hero.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /*size*/
+    height: 220px;
+    width: 100%;
+}
+
+.main-title {
+    /*text*/
+    color: var(--Dark-blue);
+    font-weight: 900;
+}
+
+.content {
+    /*space*/
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.main-text {
+    /*text*/
+    color: var(--Desaturated-blue);
+    font-weight: 700px;
+    line-height: 2;
+}
+
+.card-price {
+    border-radius: 15px;
+    background-color: var(--Very-pale-blue);
+    /*space*/
+    margin-bottom: 30px;
+    /*text*/
+    font-weight: 700;
+    /*flex*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.music-group {
+    /*flex*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.img-icon-music {
+    /*image*/
+    background-image: url(/images/icon-music.svg);
+    /*size*/
+    height: 48px;
+    width: 48px;
+    /*space*/
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.plan-title {
+    display: block;
+    /*text*/
+    color: var(--Dark-blue);
+    font-weight: 900;
+}
+
+.price {
+    /*text*/
+    color: var(--Desaturated-blue);
+    font-weight: 500;
+}
+
+.btn-change {
+    /*space*/
+    margin-right: 20px;
+    /*text*/
+    color: var(--Bright-blue);
+}
+
+.btn-change:hover {
+    /*text*/
+    text-decoration: none;
+}
+
+.btn-payment {
+    display: block;
+    border-radius: 10px;
+    background-color: var(--Bright-blue);
+    /*shadow*/
+    box-shadow: 0px 25px 20px var(--Pale-blue);
+    /*space*/
+    padding: 10px;
+    margin-bottom: 30px;
+    /*text*/
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.btn-payment:hover {
+    opacity: 0.7;
+}
+
+.btn-cancel {
+    display: block;
+    /*space*/
+    margin-bottom: 30px;
+    /*text*/
+    color: var(--Desaturated-blue);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.btn-cancel:hover {
+    /*text*/
+    color: var(--Dark-blue);
+}
+
+
+/*#########    Desktop   ##########*/
+
+@media only screen and (min-width: 400px) {
+    .pattern-bg {
+        /*image*/
+        background-image: url(/images/pattern-background-desktop.svg);
+        /*size*/
+        height: 437px;
+        /*  width: 1440px;*/
+        width: 100%;
+    }
+    .main-container {
+        /*space*/
+        margin-top: 30px;
+        margin-bottom: 30px;
+        /*size*/
+        width: 450px;
+    }
+}
